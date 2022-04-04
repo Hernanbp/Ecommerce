@@ -18,6 +18,10 @@ body{
     background: #E8E8E8;
 }
 
+a{
+    color: black;
+}
+
 .btn-filter{
     padding:.5rem 1rem;
     background: #e3e3e3;
@@ -190,4 +194,34 @@ h4{
   width: 50px;
   height: 50px;
   animation: spin 1s linear infinite;
+}
+
+
+@media (max-width: 820px){
+    header{
+        padding: 0 2em;
+    }
+    nav{
+        display:none;
+    }
+
+    .wrapper{
+        display:flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .wrapper h2{
+        margin: 0 2em;
+        margin-bottom: 1em;
+    }
+
+    .products{
+        display:flex;
+        padding: 0 3em;
+    }
+
+    .filters{
+        margin: 0 3em;
+    }
 }

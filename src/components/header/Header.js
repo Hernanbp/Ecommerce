@@ -1,4 +1,4 @@
-import { Count } from '../count/Count';
+import { Count } from '../utils/Count';
 import { useState } from 'react';
 import { MdOutlineShoppingCart, MdSearch, MdOutlineClose } from 'react-icons/md';
 import { Link } from 'react-router-dom';
@@ -21,7 +21,7 @@ export const Header = () => {
                         <circle cx="18.1853" cy="27.7278" r="17.9715" fill="#FFA02D" />
                         <circle cx="46.0872" cy="22.9998" r="22.6995" fill="black" />
                     </svg>
-                    <h3>Cloud<span>mmerce</span></h3>
+                    <h3>Cloud<span>commerce</span></h3>
                 </div>
                 <div className="search">
                     <input onChange={handleChange} value={val} type="text" placeholder='Search' />
