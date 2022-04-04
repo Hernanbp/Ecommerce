@@ -73,17 +73,59 @@ button:active{
 }
 
 .continueshopping{
-    background-color: #0085FF;
+    background-color: #ffa02d;
     color:white;
     border:none;
     padding: .8em 1em;
+    width: 180px;
 }
 
 .continueshopping:active{
-    background-color: #54acff;
+    background-color: #ffb458;
+}
+
+.contshop-link{
+    color:white;
 }
 
 a{
     text-decoration: none;
 }
 
+.quantity{
+    display:flex;
+    align-items: center;
+    padding: .5em;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8; 
+}
+
+.quantity p{
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: 8px;
+}
+
+.quantity button{
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+.total{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em;
+    background: #fff;
+}
+
+.total p{
+    font-size: 24px;
+}
+
+.total span{
+    font-size: 24px;
+    font-weight: bold;
+}

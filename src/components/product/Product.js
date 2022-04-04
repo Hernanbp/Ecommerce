@@ -12,8 +12,8 @@ export const Product = ({ title, price, category, image }) => {
         dispatch(addToCart({ title, price, category, image }));
         toast.success('Added to cart', {
             position: "bottom-right",
-            autoClose: 5000,
-            hideProgressBar: false,
+            autoClose: 1000,
+            hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,

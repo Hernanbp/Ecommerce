@@ -1,8 +1,8 @@
-import './header.css';
 import { Count } from '../count/Count';
 import { useState } from 'react';
-import { MdOutlineShoppingCart, MdSearch } from 'react-icons/md';
+import { MdOutlineShoppingCart, MdSearch, MdOutlineClose } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import './header.css';
 
 export const Header = () => {
 
@@ -15,10 +15,18 @@ export const Header = () => {
     return (
         <header>
             <div className="header-wrapper">
-                <h1>herno<span>commerce</span></h1>
+                <div className="logo">
+                    <svg width="39" height="36" viewBox="0 0 69 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="18.1855" y="36.7036" width="29.4123" height="8.99589" fill="#FFA02D" />
+                        <circle cx="18.1853" cy="27.7278" r="17.9715" fill="#FFA02D" />
+                        <circle cx="46.0872" cy="22.9998" r="22.6995" fill="black" />
+                    </svg>
+                    <h3>Cloud<span>mmerce</span></h3>
+                </div>
                 <div className="search">
                     <input onChange={handleChange} value={val} type="text" placeholder='Search' />
-                    <MdSearch className='search-ico' />
+                    {val === '' ? <MdSearch className='search-ico' /> :
+                        <MdOutlineClose className='cross-ico' onClick={() => setVal('')} />}
                 </div>
                 <nav>
                     <ul>

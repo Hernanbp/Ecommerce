@@ -3,7 +3,6 @@ import { Cart } from "./components/cart/Cart"
 import { store } from "./app/store"
 import { Provider } from "react-redux"
 import { Link } from "react-router-dom"
-import './App.css'
 
 const CartPage = () => {
     return (
@@ -12,9 +11,6 @@ const CartPage = () => {
                 <Header />
                 <div className="wrapper">
                     <Cart />
-                    <Link to="/">
-                        <button className="continueshopping">Continue Shopping</button>
-                    </Link>
                 </div>
             </div>
         </Provider>
